@@ -1,0 +1,11 @@
+{
+  "name": "express-ifttt",
+  "description": "express ifttt test app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "*.*.*",
+    "express-ifttt-webhook": "*.*.*"
+  },
+  "scripts": {"start": "node app.js"}
+}
