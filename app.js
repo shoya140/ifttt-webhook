@@ -2,7 +2,8 @@ var express = require('express')
   , webhook = require('express-ifttt-webhook');
 
 var app = express();
-app.set('port', 8080);
+var port = process.env.PORT || 8080
+app.set('port', port);
 
 app.use(webhook(function(json,done){
     console.log(json);
@@ -11,5 +12,5 @@ app.use(webhook(function(json,done){
 }));
 
 var server = app.listen(app.get('port'), function() {
-  console.log('Server listening on port', server.address().port);
+  console.log('Server listening on port:', server.address().port);
 });
