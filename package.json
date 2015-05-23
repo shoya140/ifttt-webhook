@@ -5,7 +5,10 @@
   "private": true,
   "dependencies": {
     "express": "*.*.*",
-    "express-ifttt-webhook": "*.*.*"
+    "express-ifttt-webhook": "*.*.*",
+    "request": "^2.55.0"
   },
-  "scripts": {"start": "node app.js"}
+  "scripts": {
+    "start": "node app.js"
+  }
 }
