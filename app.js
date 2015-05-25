@@ -18,6 +18,7 @@ app.use(webhook(function(json,done){
       console.log(response.statusCode, body);
     }
   });
+  done(null,json);
 }));
 
 var server = app.listen(app.get('port'), function() {
